@@ -1,0 +1,1 @@
+export funcion //tarea crear la tarjetica de pedidos y mandarla aca xd jajajaja

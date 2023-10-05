@@ -23,6 +23,11 @@ main{
 .pausa__caja{
     background-color: var(--font);
 }
+
+.pausa__caja__card{
+    background-color: #a39e9e;
+}
+
 .mesas{
     background-color: var(--font);
 }

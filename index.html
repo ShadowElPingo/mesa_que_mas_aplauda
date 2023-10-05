@@ -15,27 +15,62 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <h1> prueba</h1>
+        
         <main class="row col-12 d-flex justify-content-around p-2  ">
-            <div class=" col-3  rounded-5 d-flex justify-content-center border border-5 border-white comandas">
-                <h2 class="w-100 d-flex  justify-content-center align-items-center  rounded-5 mt-2 comandas__h2 ">PEDIDOS</h2>
-
+            <div class=" col-3  rounded-5 d-flex flex-column  border border-5 border-white comandas">
+                <h2 class="w-100 d-flex  justify-content-center align-items-center mb-3  rounded-5 mt-2 comandas__h2 ">PEDIDOS</h2>
+                <div class="comandas__enEspera w-100 d-flex  justify-content-center">
+                    <div class="btn-group w-75">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mesa 1
+                        </button>
+                        <ul class="dropdown-menu p-3">
+                          
+                          <li>1 Pizza</li>
+                          <li>3 Haamburguesas</li>
+                          <li>1 panzerotti</li>
+                          <li>1 lasagna</li>
+                        </ul>
+                      </div>
+                </div>
             </div>
             <div class="pausa row col-8 h-100 gap-3 ">
-                <div class="row rounded-5 border border-5 border-white  col-12 h-50  pausa__caja"></div>
-                <div class="row rounded-5 border border-5 border-white col-12 gap-2 h-50  justify-content-around p-3  mesas">
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M1</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M2</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M3</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M4</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M5</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M6</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M7</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M8</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M9</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M10</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M11</button>
-                    <button class="col-3 rounded-5  btn btn-primary  fs-3  mesas__boton">M12</button>
+
+                <div class="row rounded-5 border border-5 border-white  col-12 h-50  pausa__caja">
+                    <!-- CARDS -->
+                    
+                    <div class="card rounded-5 pausa__caja__card" style="width: 18rem;">
+                        <button type="button" class="btn-close  botoncito-cierre mt-2" aria-label="Close"></button>
+                        <h5 class="card-title w-100 d-flex justify-content-center">Mesa 1</h5>
+                        <div class="card-body d-flex flex-column justify-content-around">
+                            <div class="contenido d-flex flex-column ">
+                                
+                                <ul>
+                                    <li>
+                                        Pizza..........................$20.000
+                                    </li>
+                                    <li>
+                                        Hamburguesa........$20.000
+                                    </li>
+                                    <li>
+                                        Jugos.......................$10.000
+                                    </li>
+                                    <li>
+                                        Gaseosaurus...........$10.000
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="botones d-flex justify-content-between">
+                                <button type="button" class="btn btn-success">Adicionar</button>
+                                <button type="button" class="btn btn-danger">Cobrar</button>
+                            </div>                      
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row rounded-5 border border-5 border-white col-12 gap-2 h-50  justify-content-around p-3  mesas" id ="mesas">
+                   
                 </div>
             </div>
             
@@ -46,5 +81,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- JS -->
         <script src="./js/index.js" type="module"></script>
+        <!-- ICONOS -->
+        <script
+            src="https://kit.fontawesome.com/81581fb069.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
