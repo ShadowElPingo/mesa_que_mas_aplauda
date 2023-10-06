@@ -37,5 +37,43 @@ main{
     box-shadow: inset 0 0 5px 5px;
 }
 
+.cuerpesitoModal{
+    background-image: url("../img/comanda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+}
 
+.colorsitoModal{
+    background-color: #fae0bf;
+}
 
+.usuarito{
+    color: green;
+}
+
+.escojeComidita{
+    height: 2rem;
+}
+
+.masMenos{
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
+.modalcito{
+    width: 45rem;
+}
+
+.botoncitoCierre{
+    display: flex;
+    text-align:right;
+    justify-content: right;
+    margin-bottom: 1rem;
+}
+
+.btnX{
+    justify-self: end;
+    width: 2rem;
+}
